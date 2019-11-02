@@ -249,6 +249,17 @@ stm32g0[BC]1?c* stm32g0 ROM=256K RAM=128K
 stm32g0[BC]1?e* stm32g0 ROM=512K RAM=128K
 
 ################################################################################
+# the SAMD chips
+
+samd10?13* samd ROM=8K RAM=4K
+samd10?14* samd ROM=16K RAM=4K
+
+samd21?15* samd ROM=32K RAM=4K
+samd21?16* samd ROM=64K RAM=8K
+samd21?17* samd ROM=128K RAM=16K
+samd21?18* samd ROM=256K RAM=32K
+
+################################################################################
 # the SAM3 chips
 
 sam3a4* sam3a ROM=256K RAM=32K RAM1=32K
@@ -274,9 +285,6 @@ sam3x4c* sam3x ROM=256K RAM=32K RAM1=32K
 sam3x4e* sam3xnfc ROM=256K RAM=32K RAM1=32K
 sam3x8c* sam3x ROM=512K RAM=64K RAM1=32K
 sam3x8e* sam3xnfc ROM=512K RAM=64K RAM1=32K
-
-samd10?13* samd ROM=8K RAM=4K
-samd10?14* samd ROM=16K RAM=4K
 
 ################################################################################
 # the SAM4 chips

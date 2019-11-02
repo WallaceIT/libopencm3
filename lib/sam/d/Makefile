@@ -29,7 +29,8 @@ TGT_CFLAGS      += $(DEBUG_FLAGS)
 TGT_CFLAGS	+= $(STANDARD_FLAGS)
 # ARFLAGS	= rcsv
 ARFLAGS		= rcs
-OBJS		= 
+
+OBJS		+= gclk.o gpio.o nvmctrl.o pm.o sysctrl.o
 
 VPATH += ../../cm3:../common
 

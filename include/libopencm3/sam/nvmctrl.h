@@ -1,9 +1,7 @@
-/* This provides unification of code over SAM subfamilies */
-
 /*
  * This file is part of the libopencm3 project.
  *
- * Copyright (C) 2014 Felix Held <felix-libopencm3@felixheld.de>
+ * Copyright (C) 2019 Francesco Valla <valla.francesco@gmail.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -19,20 +17,13 @@
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#if defined(SAM3A)
-#       include <libopencm3/sam/3a/gpio.h>
-#elif defined(SAM3N)
-#       include <libopencm3/sam/3n/gpio.h>
-#elif defined(SAM3S)
-#       include <libopencm3/sam/3s/gpio.h>
-#elif defined(SAM3U)
-#       include <libopencm3/sam/3u/gpio.h>
-#elif defined(SAM3X)
-#       include <libopencm3/sam/3x/gpio.h>
-#elif defined(SAM4L)
-#       include <libopencm3/sam/4l/gpio.h>
-#elif defined(SAMD)
-#       include <libopencm3/sam/d/gpio.h>
+#ifndef SAM_NVMCTRL_H
+#define SAM_NVMCTRL_H
+
+#if defined(SAMD)
+#	include <libopencm3/sam/d/nvmctrl.h>
 #else
-#       error "sam family not defined."
+#	error "NVMCTRL interface is not defined for your processor family"
+#endif
+
 #endif

@@ -26,6 +26,29 @@
 #define PORTA				(PORT_BASE + 0)
 #define PORTB				(PORT_BASE + 0x80)
 
+#define PINCFG_MUXEN        (1 << 0)
+#define PINCFG_INEN         (1 << 1)
+#define PINCFG_PULLEN       (1 << 2)
+#define PINCFG_STRONG       (1 << 6)
+
+#define WRCONFIG_MUXEN      (1 << 16)
+#define WRCONFIG_INEN       (1 << 17)
+#define WRCONFIG_PULLEN     (1 << 18)
+
+#define WRCONFIG_PMUXA      (0 << 24)
+#define WRCONFIG_PMUXB      (1 << 24)
+#define WRCONFIG_PMUXC      (2 << 24)
+#define WRCONFIG_PMUXD      (3 << 24)
+#define WRCONFIG_PMUXE      (4 << 24)
+#define WRCONFIG_PMUXF      (5 << 24)
+#define WRCONFIG_PMUXG      (6 << 24)
+#define WRCONFIG_PMUXH      (7 << 24)
+#define WRCONFIG_PMUXI      (8 << 24)
+
+#define WRCONFIG_WRPINMUX   (1 << 28)
+#define WRCONFIG_WRPINCFG   (1 << 30)
+#define WRCONFIG_HWSEL      (1 << 31)
+
 /* --- PORT registers ----------------------------------------------------- */
 
 /* Direction register */
